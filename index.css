@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    height: 100vh;
+}
+
+header {
+    background: linear-gradient(to right, azure, red, blue, rgb(223, 146, 3), azure);
+    color: #fff;
+    padding: 30px 0;
+    font-weight: bold;
+    text-align: center;
+    background-clip: text;
+}
+header h1 {
+    margin: 0;
+    color: transparent;
+    font-size: 100px;
+}
+img{
+    
+}
+main {
+    padding: 20px;
+}
+.content-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul#animelist {
+    list-style: none;
+    padding: 0;
+}
+
+ul#animelist li {
+    padding: 10px;
+    background-color: #070c24;
+    margin-bottom: 5px;
+    border: 1px solid #0f123896;
+    color: azure;
+    width: 400px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 26px;
+}
+ul#animelist li:hover{
+    background: linear-gradient(to right, red, blue, rgb(223, 146, 3));
+    font-family: 'Courier New', Courier, monospace;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-weight: bold;
+}
+.link a{
+    text-decoration: none;
+    color: white;
+}
+.wallpaper{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+}
+.wallpaper img {
+    align-self: center;
+    width: 60%;
+    object-fit: cover;
+    border-radius: 15px;
+    
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+    
+
+
+    .content-container {
+        flex-direction: column;
+    }
+
+    .wallpaper {
+        margin-top: 20px;
+    }
+ 
+}
+@media (max-width: 400px) {
+    .wallpaper img{
+        align-self: center;
+    width: 70%;
+    object-fit: cover;
+    border-radius: 15px;
+    }
+}
